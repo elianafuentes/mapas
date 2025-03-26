@@ -1,0 +1,2126 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Precios Promedio de Gas Natural Comprimido Vehicular (GNCV) en diferentes estaciones de servicio de Colombia &#8212; Mi Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Analisis';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Bienvenidos a mi Jupyter Book" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Mi Jupyter Book</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Bienvenidos a mi Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Precios Promedio de Gas Natural Comprimido Vehicular (GNCV) en diferentes estaciones de servicio de Colombia</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Analisis.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Precios Promedio de Gas Natural Comprimido Vehicular (GNCV) en diferentes estaciones de servicio de Colombia</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Precios Promedio de Gas Natural Comprimido Vehicular (GNCV) en diferentes estaciones de servicio de Colombia</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contextualizacion-de-la-base-de-datos">Contextualización de la Base de Datos</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descripcion-general">Descripción General</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo-de-la-base-de-datos">Objetivo de la Base de Datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descripcion-de-las-variables">Descripción de las Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-temporales">Variables Temporales:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-geograficas">Variables Geográficas:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-de-la-estacion-de-servicio">Variables de la Estación de Servicio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-de-precio">Variable de Precio:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-variables">Tipos de Variables</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cuantitativas"><strong>Variables Cuantitativas</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cualitativas"><strong>Variables Cualitativas</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#valores-faltantes">Valores Faltantes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis">Análisis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-los-datos">Interpretación de los Datos</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-precios-promedio-de-gncv">Distribución de precios promedio de GNCV</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-la-distribucion-de-precios-promedio-de-gncv">Interpretación de la Distribución de precios promedio de GNCV</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-precios-por-departamento">Distribución de Precios por Departamento</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-la-distribucion-de-precios-por-departamento">Análisis de la Distribución de Precios por Departamento</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-la-grafica">Interpretación de la Gráfica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Análisis</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evolucion-del-precio-por-departamento">Evolucion del Precio por Departamento</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-la-grafica-evolucion-del-precio-por-departamento">Análisis de la grafica Evolucion del Precio por Departamento</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tendencia-temporal-de-precios-promedio">Tendencia Temporal de Precios Promedio</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-grafica-tendencia-temporal-de-precios-promedio">Analisis grafica Tendencia Temporal de Precios Promedio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tendencia-general"><strong>1. Tendencia General</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etapas-clave"><strong>2. Etapas Clave</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tendencia-temporal-de-precios-promedio-por-ano-y-mes">Tendencia Temporal de Precios Promedio por Año y Mes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-la-tendencia-temporal-de-precios-promedio-por-ano-y-mes">Análisis de la Tendencia Temporal de Precios Promedio por Año y Mes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#descripcion-de-la-grafica">Descripción de la Gráfica</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion">Interpretación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tendencia-general-a-lo-largo-de-los-anos"><strong>1. Tendencia General a lo Largo de los Años</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comportamiento-mensual"><strong>2. Comportamiento Mensual</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#precios-promedio-por-departamento">Precios Promedio por Departamento</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-los-precios-promedio-por-departamento">Interpretación de los Precios Promedio por Departamento</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-general">Análisis General</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#precio-promedio-por-departamento">Precio Promedio por Departamento</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-del-precio-promedio-por-departamento">Análisis del Precio Promedio por Departamento</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Interpretación</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#departamentos-con-precios-mas-altos"><strong>1. Departamentos con Precios Más Altos</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#departamentos-con-precios-intermedios"><strong>2. Departamentos con Precios Intermedios</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#departamentos-con-precios-mas-bajos"><strong>3. Departamentos con Precios Más Bajos</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#top-10-municipios-con-precios-mas-altos">Top 10 Municipios con Precios Más Altos</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Descripción de la Gráfica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Interpretación</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#municipios-con-precios-mas-altos"><strong>1. Municipios con Precios Más Altos</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#municipios-con-precios-intermedios-en-el-ranking"><strong>2. Municipios con Precios Intermedios en el Ranking</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#municipios-en-la-parte-baja-del-ranking"><strong>3. Municipios en la Parte Baja del Ranking</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriz-de-correlacion">Matriz de Correlación</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-las-correlaciones">Interpretación de las correlaciones</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relacion-entre-ano-y-precio-promedio-publicado-0-65">1️ <strong>Relación entre Año y Precio Promedio Publicado</strong> (<strong>0.65</strong>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relacion-entre-precio-promedio-y-latitud-longitud"><strong>Relación entre Precio Promedio y Latitud/Longitud</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relacion-entre-latitud-y-longitud-0-21"><strong>Relación entre Latitud y Longitud (0.21)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusión</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#georreferenciacion-del-precio-promedio-del-gas-natural-comprimido-vehicular-gncv-en-estaciones-de-servicio-de-colombia">Georreferenciación del Precio Promedio del Gas Natural Comprimido Vehicular (GNCV) en Estaciones de Servicio de Colombia</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-precios-de-gas-natural-comprimido-vehicular-en-colombia-marzo-2025">Distribución de Precios de Gas Natural Comprimido Vehicular en Colombia – Marzo 2025</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-los-colores">Interpretación de los colores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hallazgos-clave">Hallazgos clave</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#precios-de-gncv-por-municipio-marzo-2025">Precios de GNCV por Municipio – Marzo 2025</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Interpretación de los colores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Hallazgos clave</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Municipios con precios más altos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#municipios-con-precios-mas-bajos">Municipios con precios más bajos</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#variacion-de-precios-del-gncv-en-colombia-enero-2021-marzo-2025">Variación de Precios del GNCV en Colombia (Enero 2021 - Marzo 2025)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Tendencia general</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-por-regiones">Análisis por regiones</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#region-caribe-norte">Región Caribe (Norte)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#region-andina-centro">Región Andina (Centro)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#region-occidental">Región Occidental</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-espacial">Distribución espacial</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implicaciones-economicas">Implicaciones económicas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Conclusión</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="precios-promedio-de-gas-natural-comprimido-vehicular-gncv-en-diferentes-estaciones-de-servicio-de-colombia">
+<h1>Precios Promedio de Gas Natural Comprimido Vehicular (GNCV) en diferentes estaciones de servicio de Colombia<a class="headerlink" href="#precios-promedio-de-gas-natural-comprimido-vehicular-gncv-en-diferentes-estaciones-de-servicio-de-colombia" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="contextualizacion-de-la-base-de-datos">
+<h1>Contextualización de la Base de Datos<a class="headerlink" href="#contextualizacion-de-la-base-de-datos" title="Link to this heading">#</a></h1>
+<section id="descripcion-general">
+<h2>Descripción General<a class="headerlink" href="#descripcion-general" title="Link to this heading">#</a></h2>
+<p>La base de datos contiene información sobre los precios promedio de Gas Natural Comprimido Vehicular (GNCV) en diferentes estaciones de servicio de Colombia. Los datos incluyen detalles sobre la ubicación geográfica y temporal del precio reportado, permitiendo el análisis de la variabilidad de precios en el tiempo y el espacio.</p>
+</section>
+<section id="objetivo-de-la-base-de-datos">
+<h2>Objetivo de la Base de Datos<a class="headerlink" href="#objetivo-de-la-base-de-datos" title="Link to this heading">#</a></h2>
+<p>El propósito de esta base de datos es proporcionar información estructurada que permita realizar análisis sobre la distribución de precios del GNCV en Colombia, identificar patrones de variación geográfica y temporal, y facilitar la toma de decisiones en políticas energéticas y económicas.</p>
+</section>
+<section id="descripcion-de-las-variables">
+<h2>Descripción de las Variables<a class="headerlink" href="#descripcion-de-las-variables" title="Link to this heading">#</a></h2>
+<section id="variables-temporales">
+<h3>Variables Temporales:<a class="headerlink" href="#variables-temporales" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>FECHA_PRECIO</strong>: Fecha del precio reportado (YYYY-MM-DD).</p></li>
+<li><p><strong>ANIO_PRECIO</strong>: Año del precio reportado.</p></li>
+<li><p><strong>MES_PRECIO</strong>: Mes del precio reportado.</p></li>
+<li><p><strong>DIA_PRECIO</strong>: Día del precio reportado.</p></li>
+</ul>
+</section>
+<section id="variables-geograficas">
+<h3>Variables Geográficas:<a class="headerlink" href="#variables-geograficas" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>DEPARTAMENTO_EDS</strong>: Departamento donde se encuentra la estación de servicio.</p></li>
+<li><p><strong>MUNICIPIO_EDS</strong>: Municipio donde se encuentra la estación de servicio.</p></li>
+<li><p><strong>CODIGO_MUNICIPIO_DANE</strong>: Código DANE del municipio.</p></li>
+<li><p><strong>LATITUD_MUNICIPIO</strong>: Coordenada de latitud del municipio.</p></li>
+<li><p><strong>LONGITUD_MUNICIPIO</strong>: Coordenada de longitud del municipio.</p></li>
+</ul>
+</section>
+<section id="variables-de-la-estacion-de-servicio">
+<h3>Variables de la Estación de Servicio:<a class="headerlink" href="#variables-de-la-estacion-de-servicio" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>NOMBRE_COMERCIAL_EDS</strong>: Nombre comercial de la estación de servicio.</p></li>
+<li><p><strong>TIPO_COMBUSTIBLE</strong>: Tipo de combustible (en este caso, “GNCV”).</p></li>
+</ul>
+</section>
+<section id="variable-de-precio">
+<h3>Variable de Precio:<a class="headerlink" href="#variable-de-precio" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>PRECIO_PROMEDIO_PUBLICADO</strong>: Precio promedio del GNCV en la estación de servicio (en pesos colombianos).</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Librerias </span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">janitor</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">jan</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">shapely.geometry</span><span class="w"> </span><span class="kn">import</span> <span class="n">Point</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.colors</span><span class="w"> </span><span class="kn">import</span> <span class="n">Normalize</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ruta en Mac (ajústala si es necesario)</span>
+<span class="n">csv_path</span> <span class="o">=</span> <span class="s2">&quot;/Users/elianafuentes/Documents/DATAVIZMAPAS/Consulta_Precios_Promedio_de_Gas_Natural_Comprimido_Vehicular__AUTOMATIZADO__20250314.csv&quot;</span>
+
+<span class="c1"># Cargar el archivo CSV</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv_path</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;latin1&quot;</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ver las primeras filas</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>FECHA_PRECIO</th>
+      <th>ANIO_PRECIO</th>
+      <th>MES_PRECIO</th>
+      <th>DIA_PRECIO</th>
+      <th>DEPARTAMENTO_EDS</th>
+      <th>MUNICIPIO_EDS</th>
+      <th>NOMBRE_COMERCIAL_EDS</th>
+      <th>PRECIO_PROMEDIO_PUBLICADO</th>
+      <th>TIPO_COMBUSTIBLE</th>
+      <th>CODIGO_MUNICIPIO_DANE</th>
+      <th>LATITUD_MUNICIPIO</th>
+      <th>LONGITUD_MUNICIPIO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2024-09-01</td>
+      <td>2024</td>
+      <td>9</td>
+      <td>1</td>
+      <td>SANTANDER</td>
+      <td>BUCARAMANGA</td>
+      <td>CAMOVA</td>
+      <td>2299</td>
+      <td>GNCV</td>
+      <td>68001</td>
+      <td>7.155834</td>
+      <td>-73.111572</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2024-07-01</td>
+      <td>2024</td>
+      <td>7</td>
+      <td>1</td>
+      <td>SANTANDER</td>
+      <td>BUCARAMANGA</td>
+      <td>CAMOVA</td>
+      <td>2249</td>
+      <td>GNCV</td>
+      <td>68001</td>
+      <td>7.155834</td>
+      <td>-73.111572</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2024-10-01</td>
+      <td>2024</td>
+      <td>10</td>
+      <td>1</td>
+      <td>CUNDINAMARCA</td>
+      <td>CHIA</td>
+      <td>CHIA EDS - GNV</td>
+      <td>2787</td>
+      <td>GNCV</td>
+      <td>25175</td>
+      <td>4.857824</td>
+      <td>-74.038094</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2024-10-01</td>
+      <td>2024</td>
+      <td>10</td>
+      <td>1</td>
+      <td>CALDAS</td>
+      <td>MANIZALES</td>
+      <td>ESTACIÃN DE SERVICIO CALDAS</td>
+      <td>3324</td>
+      <td>GNCV</td>
+      <td>17001</td>
+      <td>5.083433</td>
+      <td>-75.507278</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2024-10-01</td>
+      <td>2024</td>
+      <td>10</td>
+      <td>1</td>
+      <td>BOGOTA D.C.</td>
+      <td>BOGOTA, D.C.</td>
+      <td>ESTACION DE SERVICIO COMBUSCOL EL DORADO</td>
+      <td>2718</td>
+      <td>GNCV</td>
+      <td>11001</td>
+      <td>4.652954</td>
+      <td>-74.083565</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tipos-de-variables">
+<h1>Tipos de Variables<a class="headerlink" href="#tipos-de-variables" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definir las variables y su tipo según tu dataset</span>
+<span class="n">dict_variables</span> <span class="o">=</span> <span class="p">{</span> 
+    <span class="s2">&quot;Macro Variable&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;FECHA_PRECIO&quot;</span><span class="p">,</span> <span class="s2">&quot;MES&quot;</span><span class="p">,</span> <span class="s2">&quot;DEPARTAMENTO_EDS&quot;</span><span class="p">,</span> <span class="s2">&quot;MUNICIPIO_EDS&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;NOMBRE_COMERCIAL_EDS&quot;</span><span class="p">,</span> <span class="s2">&quot;TIPO_COMBUSTIBLE&quot;</span><span class="p">,</span> <span class="s2">&quot;PRECIO_PROMEDIO_PUBLICADO&quot;</span>
+    <span class="p">],</span> 
+    <span class="s2">&quot;Tipo&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;Cuantitativa Discreta&quot;</span><span class="p">,</span> <span class="s2">&quot;Cualitativa Ordinal&quot;</span><span class="p">,</span> <span class="s2">&quot;Cualitativa Nominal&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;Cualitativa Nominal&quot;</span><span class="p">,</span> <span class="s2">&quot;Cualitativa Nominal&quot;</span><span class="p">,</span> <span class="s2">&quot;Cualitativa Nominal&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;Cuantitativa Continua&quot;</span>
+    <span class="p">]</span>   
+<span class="p">}</span>
+
+<span class="c1"># Convertir a DataFrame</span>
+<span class="n">df_variables</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">dict_variables</span><span class="p">)</span>
+
+<span class="c1"># Mostrar el DataFrame</span>
+<span class="n">df_variables</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Macro Variable</th>
+      <th>Tipo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>FECHA_PRECIO</td>
+      <td>Cuantitativa Discreta</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>MES</td>
+      <td>Cualitativa Ordinal</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>DEPARTAMENTO_EDS</td>
+      <td>Cualitativa Nominal</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>MUNICIPIO_EDS</td>
+      <td>Cualitativa Nominal</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>NOMBRE_COMERCIAL_EDS</td>
+      <td>Cualitativa Nominal</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>TIPO_COMBUSTIBLE</td>
+      <td>Cualitativa Nominal</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>PRECIO_PROMEDIO_PUBLICADO</td>
+      <td>Cuantitativa Continua</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<section id="variables-cuantitativas">
+<h2><strong>Variables Cuantitativas</strong><a class="headerlink" href="#variables-cuantitativas" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>FECHA_PRECIO (Discreta):</strong> Representa el día en que se registró el precio del GNCV.</p></li>
+<li><p><strong>PRECIO_PROMEDIO_PUBLICADO (Continua):</strong> Indica el precio promedio del GNCV en las estaciones de servicio.</p></li>
+</ul>
+</section>
+<section id="variables-cualitativas">
+<h2><strong>Variables Cualitativas</strong><a class="headerlink" href="#variables-cualitativas" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>MES (Ordinal):</strong> Indica el mes del año.</p></li>
+<li><p><strong>DEPARTAMENTO_EDS y MUNICIPIO_EDS (Nominales):</strong> Ubican geográficamente las estaciones de servicio.</p></li>
+<li><p><strong>NOMBRE_COMERCIAL_EDS (Nominal):</strong> Identifica la marca o nombre de la estación.</p></li>
+<li><p><strong>TIPO_COMBUSTIBLE (Nominal):</strong> Indica el tipo de combustible vendido en la estación.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Información sobre las columnas y tipos de datos</span>
+<span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 9855 entries, 0 to 9854
+Data columns (total 12 columns):
+ #   Column                     Non-Null Count  Dtype  
+---  ------                     --------------  -----  
+ 0   FECHA_PRECIO               9855 non-null   object 
+ 1   ANIO_PRECIO                9855 non-null   int64  
+ 2   MES_PRECIO                 9855 non-null   int64  
+ 3   DIA_PRECIO                 9855 non-null   int64  
+ 4   DEPARTAMENTO_EDS           9855 non-null   object 
+ 5   MUNICIPIO_EDS              9855 non-null   object 
+ 6   NOMBRE_COMERCIAL_EDS       9855 non-null   object 
+ 7   PRECIO_PROMEDIO_PUBLICADO  9855 non-null   int64  
+ 8   TIPO_COMBUSTIBLE           9855 non-null   object 
+ 9   CODIGO_MUNICIPIO_DANE      9855 non-null   int64  
+ 10  LATITUD_MUNICIPIO          9855 non-null   float64
+ 11  LONGITUD_MUNICIPIO         9855 non-null   float64
+dtypes: float64(2), int64(5), object(5)
+memory usage: 924.0+ KB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Seleccionar solo las variables importantes</span>
+<span class="n">df_numeric</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;ANIO_PRECIO&#39;</span><span class="p">,</span> <span class="s1">&#39;PRECIO_PROMEDIO_PUBLICADO&#39;</span><span class="p">,</span> <span class="s1">&#39;LATITUD_MUNICIPIO&#39;</span><span class="p">,</span> <span class="s1">&#39;LONGITUD_MUNICIPIO&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Resumen estadístico de las variables numéricas</span>
+<span class="n">df_numeric</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ANIO_PRECIO</th>
+      <th>PRECIO_PROMEDIO_PUBLICADO</th>
+      <th>LATITUD_MUNICIPIO</th>
+      <th>LONGITUD_MUNICIPIO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>9855.000000</td>
+      <td>9855.000000</td>
+      <td>9855.000000</td>
+      <td>9855.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>2022.702790</td>
+      <td>2169.798478</td>
+      <td>5.825072</td>
+      <td>-75.007978</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>1.170838</td>
+      <td>502.294147</td>
+      <td>2.517967</td>
+      <td>1.054845</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>2021.000000</td>
+      <td>0.000000</td>
+      <td>1.749139</td>
+      <td>-77.118729</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>2022.000000</td>
+      <td>1800.000000</td>
+      <td>4.499501</td>
+      <td>-75.795792</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>2023.000000</td>
+      <td>2089.000000</td>
+      <td>4.652954</td>
+      <td>-74.827713</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>2024.000000</td>
+      <td>2438.000000</td>
+      <td>6.257590</td>
+      <td>-74.083565</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>2025.000000</td>
+      <td>19719.000000</td>
+      <td>11.121895</td>
+      <td>-70.869469</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="valores-faltantes">
+<h1>Valores Faltantes<a class="headerlink" href="#valores-faltantes" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Análisis de valores faltantes</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Valores faltantes por columna:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Valores faltantes por columna:
+FECHA_PRECIO                 0
+ANIO_PRECIO                  0
+MES_PRECIO                   0
+DIA_PRECIO                   0
+DEPARTAMENTO_EDS             0
+MUNICIPIO_EDS                0
+NOMBRE_COMERCIAL_EDS         0
+PRECIO_PROMEDIO_PUBLICADO    0
+TIPO_COMBUSTIBLE             0
+CODIGO_MUNICIPIO_DANE        0
+LATITUD_MUNICIPIO            0
+LONGITUD_MUNICIPIO           0
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<section id="analisis">
+<h2>Análisis<a class="headerlink" href="#analisis" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>No hay valores faltantes en ninguna de las variables, lo que indica que la base de datos está completa y lista para su análisis sin necesidad de imputaciones o limpiezas adicionales.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(9855, 12)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Número de departamentos, municipios y estaciones únicas</span>
+<span class="n">unique_values</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Departamentos únicos&quot;</span><span class="p">:</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;DEPARTAMENTO_EDS&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">(),</span>
+    <span class="s2">&quot;Municipios únicos&quot;</span><span class="p">:</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;MUNICIPIO_EDS&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">(),</span>
+    <span class="s2">&quot;Estaciones de servicio únicas&quot;</span><span class="p">:</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;NOMBRE_COMERCIAL_EDS&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">(),</span>
+    <span class="s2">&quot;Tipos de combustible&quot;</span><span class="p">:</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;TIPO_COMBUSTIBLE&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="n">unique_values</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Departamentos únicos&#39;: 21,
+ &#39;Municipios únicos&#39;: 85,
+ &#39;Estaciones de servicio únicas&#39;: 471,
+ &#39;Tipos de combustible&#39;: array([&#39;GNCV&#39;], dtype=object)}
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="interpretacion-de-los-datos">
+<h2>Interpretación de los Datos<a class="headerlink" href="#interpretacion-de-los-datos" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Cobertura geográfica:</strong><br />
+La base de datos abarca <strong>21 departamentos</strong> y <strong>85 municipios</strong> de Colombia, lo que permite realizar análisis espaciales y regionales sobre la distribución y variación de precios del GNCV.</p></li>
+<li><p><strong>Número de estaciones de servicio:</strong><br />
+Se cuenta con información de <strong>471 estaciones de servicio</strong>, lo que indica una cobertura amplia y suficiente para realizar estudios sobre el comportamiento de precios en distintas regiones.</p></li>
+<li><p><strong>Variedad de combustibles:</strong><br />
+En este conjunto de datos, <strong>solo se encuentra el tipo de combustible “GNCV”</strong>, lo que confirma que el análisis se centrará exclusivamente en este tipo de energía vehicular.</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="distribucion-de-precios-promedio-de-gncv">
+<h1>Distribución de precios promedio de GNCV<a class="headerlink" href="#distribucion-de-precios-promedio-de-gncv" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Configuración de estilo</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;whitegrid&quot;</span><span class="p">)</span>
+
+<span class="c1"># Histograma de precios</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;PRECIO_PROMEDIO_PUBLICADO&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;PRECIO_PROMEDIO_PUBLICADO&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;dashed&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Media&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribución de Precios Promedio de GNCV&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Precio Promedio (COP)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Frecuencia&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/90c2ec87e55a02558ee8ec0690463eca9e2a217c397d20c3abe0e6b0f063fc92.png" src="_images/90c2ec87e55a02558ee8ec0690463eca9e2a217c397d20c3abe0e6b0f063fc92.png" />
+</div>
+</div>
+<section id="interpretacion-de-la-distribucion-de-precios-promedio-de-gncv">
+<h2>Interpretación de la Distribución de precios promedio de GNCV<a class="headerlink" href="#interpretacion-de-la-distribucion-de-precios-promedio-de-gncv" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Forma de la distribución:</strong><br />
+La distribución tiene una fuerte asimetría positiva (sesgo a la derecha), lo que indica que la mayoría de los precios promedio están concentrados en un rango bajo, pero existen valores atípicos elevados que extienden la cola de la distribución.</p></li>
+<li><p><strong>Rango de precios:</strong><br />
+La mayoría de los precios se encuentran entre <strong>2,000 y 3,000 COP</strong>, con una alta frecuencia en este intervalo.</p></li>
+<li><p><strong>Posición de la media:</strong><br />
+La media, representada por la línea roja punteada, está ligeramente desplazada hacia la derecha, lo que confirma el sesgo positivo. Esto significa que algunos precios elevados están influyendo en la media, elevándola por encima del valor más frecuente.</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="distribucion-de-precios-por-departamento">
+<h1>Distribución de Precios por Departamento<a class="headerlink" href="#distribucion-de-precios-por-departamento" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;PRECIO_PROMEDIO_PUBLICADO&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;DEPARTAMENTO_EDS&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;coolwarm&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribución de Precios por Departamento&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Precio Promedio (COP)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Departamento&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/70/380whh_x6t31tncscvq5h0qr0000gn/T/ipykernel_21837/3224358010.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `y` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x=&quot;PRECIO_PROMEDIO_PUBLICADO&quot;, y=&quot;DEPARTAMENTO_EDS&quot;, data=df, palette=&quot;coolwarm&quot;)
+</pre></div>
+</div>
+<img alt="_images/e0f49e79e64764e613012be9554fefc19ad5e43c0771d9d83662dd27134b27bc.png" src="_images/e0f49e79e64764e613012be9554fefc19ad5e43c0771d9d83662dd27134b27bc.png" />
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="analisis-de-la-distribucion-de-precios-por-departamento">
+<h1>Análisis de la Distribución de Precios por Departamento<a class="headerlink" href="#analisis-de-la-distribucion-de-precios-por-departamento" title="Link to this heading">#</a></h1>
+<p>La gráfica presenta la distribución de precios promedio en diferentes departamentos de Colombia. A continuación, se realiza un análisis de la información proporcionada:</p>
+<section id="interpretacion-de-la-grafica">
+<h2>Interpretación de la Gráfica<a class="headerlink" href="#interpretacion-de-la-grafica" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Departamentos Representados</strong>: La gráfica incluye una lista de departamentos colombianos, como Santander, Cundinamarca, Caldas, Bogotá D.C., Valle del Cauca, entre otros.</p></li>
+<li><p><strong>Rango de Precios</strong>: Los precios promedio están distribuidos en un rango que va desde 2,500 COP hasta 20,000 COP, con incrementos de 2,500 COP.</p></li>
+</ol>
+</section>
+<section id="id1">
+<h2>Análisis<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Variabilidad Regional</strong>: La gráfica sugiere una variabilidad significativa en los precios promedio entre los diferentes departamentos, lo que podría reflejar diferencias en el desarrollo económico, la oferta y la demanda, y otros factores regionales.</p></li>
+<li><p><strong>Implicaciones</strong>: Esta distribución de precios puede ser útil para identificar áreas con mayores oportunidades de inversión, regiones con necesidades específicas de políticas económicas, o para el análisis de mercados específicos.</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="evolucion-del-precio-por-departamento">
+<h1>Evolucion del Precio por Departamento<a class="headerlink" href="#evolucion-del-precio-por-departamento" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#  Tendencias temporales</span>
+<span class="c1"># Convertir FECHA_PRECIO a tipo datetime</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;FECHA_PRECIO&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;FECHA_PRECIO&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Agrupar por fecha y calcular el precio promedio</span>
+<span class="n">df_temporal</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;FECHA_PRECIO&#39;</span><span class="p">)[</span><span class="s1">&#39;PRECIO_PROMEDIO_PUBLICADO&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Crear un gráfico de evolución temporal de precios</span>
+<span class="c1"># Definir las columnas necesarias</span>
+<span class="n">departamento_col</span> <span class="o">=</span> <span class="s1">&#39;DEPARTAMENTO_EDS&#39;</span>
+<span class="n">fecha_col</span> <span class="o">=</span> <span class="s1">&#39;FECHA_PRECIO&#39;</span>
+<span class="n">precio_col</span> <span class="o">=</span> <span class="s1">&#39;PRECIO_PROMEDIO_PUBLICADO&#39;</span>
+
+<span class="c1"># Seleccionar los 8 departamentos con más datos para el análisis temporal</span>
+<span class="n">dptos_con_mas_datos</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">departamento_col</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+<span class="c1"># Filtrar los datos para esos departamentos</span>
+<span class="n">df_seleccionados</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">departamento_col</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">dptos_con_mas_datos</span><span class="p">)]</span>
+
+<span class="c1"># Agrupar por fecha y departamento para obtener precio promedio mensual</span>
+<span class="n">df_tiempo</span> <span class="o">=</span> <span class="n">df_seleccionados</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="n">pd</span><span class="o">.</span><span class="n">Grouper</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="n">fecha_col</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;MS&#39;</span><span class="p">),</span> <span class="n">departamento_col</span><span class="p">])[</span><span class="n">precio_col</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="c1"># Crear gráfico de líneas</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+
+<span class="c1"># Para cada departamento, graficar la evolución de precios</span>
+<span class="k">for</span> <span class="n">dpto</span> <span class="ow">in</span> <span class="n">dptos_con_mas_datos</span><span class="p">:</span>
+    <span class="n">df_dpto</span> <span class="o">=</span> <span class="n">df_tiempo</span><span class="p">[</span><span class="n">df_tiempo</span><span class="p">[</span><span class="n">departamento_col</span><span class="p">]</span> <span class="o">==</span> <span class="n">dpto</span><span class="p">]</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_dpto</span><span class="p">[</span><span class="n">fecha_col</span><span class="p">],</span> <span class="n">df_dpto</span><span class="p">[</span><span class="n">precio_col</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">dpto</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Evolución del Precio de GNCV por Departamento (2021-2025)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Precio Promedio (COP)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Fecha&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Departamento&#39;</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;evolucion_precios_gncv_colombia.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/901f38a8c2cdda4dfd769af771ec48bf7537d7112da3961adbe09153625e9334.png" src="_images/901f38a8c2cdda4dfd769af771ec48bf7537d7112da3961adbe09153625e9334.png" />
+</div>
+</div>
+<section id="analisis-de-la-grafica-evolucion-del-precio-por-departamento">
+<h2>Análisis de la grafica Evolucion del Precio por Departamento<a class="headerlink" href="#analisis-de-la-grafica-evolucion-del-precio-por-departamento" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Tendencia Temporal</strong>:</p>
+<ul>
+<li><p><strong>2021Q1 - 2025Q1</strong>: La gráfica muestra la evolución trimestral del precio, lo que permite identificar tendencias a corto y largo plazo.</p></li>
+</ul>
+</li>
+<li><p><strong>Variabilidad por Departamento</strong>:</p>
+<ul>
+<li><p><strong>Diferencias Regionales</strong>: Los precios pueden variar significativamente entre departamentos debido a factores como la infraestructura de distribución, la demanda local y los costos operativos.</p></li>
+<li><p><strong>Departamentos con Mayor Variación</strong>: Algunos departamentos pueden mostrar una mayor fluctuación en los precios, lo que podría estar relacionado con eventos específicos o cambios en la oferta y demanda.</p></li>
+</ul>
+</li>
+<li><p><strong>Factores Influentes</strong>:</p>
+<ul>
+<li><p><strong>Económicos</strong>: Cambios en la economía global o nacional, como fluctuaciones en los precios del petróleo, pueden afectar los precios del GNCV.</p></li>
+<li><p><strong>Políticos</strong>: Políticas gubernamentales, subsidios o impuestos pueden influir en la evolución de los precios.</p></li>
+</ul>
+</li>
+<li><p><strong>Tendencia General</strong>:</p>
+<ul>
+<li><p><strong>Aumento Gradual</strong>: Si los precios muestran un incremento constante a lo largo del tiempo, esto podría indicar un aumento en los costos de producción, distribución o una mayor demanda de GNCV.</p></li>
+</ul>
+</li>
+<li><p><strong>Diferencias por Departamento</strong>:</p>
+<ul>
+<li><p><strong>Departamentos con Mayor Aumento</strong>: Algunos departamentos pueden mostrar un aumento más pronunciado en los precios, lo que podría estar relacionado con una mayor demanda, costos de distribución más altos o limitaciones en la infraestructura.</p></li>
+<li><p><strong>Departamentos con Menor Aumento o Estabilidad</strong>: Otros departamentos pueden experimentar aumentos menores o mantener precios estables, lo que podría indicar una mejor infraestructura, menor demanda o políticas locales que estabilizan los precios.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tendencia-temporal-de-precios-promedio">
+<h1>Tendencia Temporal de Precios Promedio<a class="headerlink" href="#tendencia-temporal-de-precios-promedio" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Gráfico de tendencia temporal</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_temporal</span><span class="p">[</span><span class="s1">&#39;FECHA_PRECIO&#39;</span><span class="p">],</span> <span class="n">df_temporal</span><span class="p">[</span><span class="s1">&#39;PRECIO_PROMEDIO_PUBLICADO&#39;</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Tendencia Temporal de Precios Promedio&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Fecha&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Precio Promedio&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/38c4a4de2e590db2fab992e799fef5f066f2632a9ce8a7c5e61ccaaf45ab5745.png" src="_images/38c4a4de2e590db2fab992e799fef5f066f2632a9ce8a7c5e61ccaaf45ab5745.png" />
+</div>
+</div>
+<section id="analisis-grafica-tendencia-temporal-de-precios-promedio">
+<h2>Analisis grafica Tendencia Temporal de Precios Promedio<a class="headerlink" href="#analisis-grafica-tendencia-temporal-de-precios-promedio" title="Link to this heading">#</a></h2>
+<section id="tendencia-general">
+<h3><strong>1. Tendencia General</strong><a class="headerlink" href="#tendencia-general" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Se observa una clara <strong>tendencia alcista</strong> en los precios a lo largo del período analizado.</p></li>
+<li><p>Entre <strong>2021 y mediados de 2022</strong>, el precio se mantiene relativamente estable, con pequeñas fluctuaciones.</p></li>
+<li><p>A partir de <strong>mediados de 2022</strong>, se inicia un <strong>aumento sostenido</strong> en los precios, que continúa hasta alcanzar su punto máximo en 2025.</p></li>
+</ul>
+</section>
+<section id="etapas-clave">
+<h3><strong>2. Etapas Clave</strong><a class="headerlink" href="#etapas-clave" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>2021 - 2022:</strong> Variabilidad moderada con ligeros picos, pero sin una tendencia definida.</p></li>
+<li><p><strong>2022 - 2023:</strong> Se observa un crecimiento acelerado en los precios, con un incremento constante.</p></li>
+<li><p><strong>2023 - 2024:</strong> Periodo de relativa estabilidad con fluctuaciones menores.</p></li>
+<li><p><strong>2024 - 2025:</strong> Se presenta un aumento significativo en los precios, alcanzando un pico alrededor de finales de 2024, seguido por un leve descenso.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tendencia-temporal-de-precios-promedio-por-ano-y-mes">
+<h1>Tendencia Temporal de Precios Promedio por Año y Mes<a class="headerlink" href="#tendencia-temporal-de-precios-promedio-por-ano-y-mes" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tendencias temporales (por año y mes)</span>
+<span class="n">df_temporal</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;ANIO_PRECIO&#39;</span><span class="p">,</span> <span class="s1">&#39;MES_PRECIO&#39;</span><span class="p">])[</span><span class="s1">&#39;PRECIO_PROMEDIO_PUBLICADO&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_temporal</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;MES_PRECIO&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;PRECIO_PROMEDIO_PUBLICADO&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;ANIO_PRECIO&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Tendencia Temporal de Precios Promedio por Año y Mes&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Mes&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Precio Promedio&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Año&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/68e6788491fba89771805ac0540f5197574113868ff43ccbd197f128ee2bc291.png" src="_images/68e6788491fba89771805ac0540f5197574113868ff43ccbd197f128ee2bc291.png" />
+</div>
+</div>
+<section id="analisis-de-la-tendencia-temporal-de-precios-promedio-por-ano-y-mes">
+<h2>Análisis de la Tendencia Temporal de Precios Promedio por Año y Mes<a class="headerlink" href="#analisis-de-la-tendencia-temporal-de-precios-promedio-por-ano-y-mes" title="Link to this heading">#</a></h2>
+<section id="descripcion-de-la-grafica">
+<h3>Descripción de la Gráfica<a class="headerlink" href="#descripcion-de-la-grafica" title="Link to this heading">#</a></h3>
+<p>Esta visualización muestra la evolución de los precios promedio a lo largo de los meses, desglosada por año (2021-2025). Cada línea representa un año y permite observar patrones estacionales y la evolución general de los precios.</p>
+</section>
+<section id="interpretacion">
+<h3>Interpretación<a class="headerlink" href="#interpretacion" title="Link to this heading">#</a></h3>
+</section>
+<section id="tendencia-general-a-lo-largo-de-los-anos">
+<h3><strong>1. Tendencia General a lo Largo de los Años</strong><a class="headerlink" href="#tendencia-general-a-lo-largo-de-los-anos" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Hay un <strong>aumento progresivo en los precios</strong> con el paso de los años.</p></li>
+<li><p>Los precios en 2021 son los más bajos, mientras que en 2025 alcanzan su nivel más alto.</p></li>
+</ul>
+</section>
+<section id="comportamiento-mensual">
+<h3><strong>2. Comportamiento Mensual</strong><a class="headerlink" href="#comportamiento-mensual" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>2021 y 2022:</strong> Los precios son relativamente bajos y estables, con ligeros aumentos hacia fin de año.</p></li>
+<li><p><strong>2023 y 2024:</strong> Se observa un incremento más pronunciado en la segunda mitad del año, especialmente en los últimos meses.</p></li>
+<li><p><strong>2025:</strong> Muestra los precios más elevados, con una ligera disminución en los primeros meses y luego una fuerte subida hacia diciembre.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="precios-promedio-por-departamento">
+<h1>Precios Promedio por Departamento<a class="headerlink" href="#precios-promedio-por-departamento" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Análisis por departamento</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Precios promedio por departamento:&quot;</span><span class="p">)</span>
+<span class="n">precio_por_departamento</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;DEPARTAMENTO_EDS&#39;</span><span class="p">)[</span><span class="s1">&#39;PRECIO_PROMEDIO_PUBLICADO&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">precio_por_departamento</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Precios promedio por departamento:
+DEPARTAMENTO_EDS
+CAUCA              2744.000000
+QUINDIO            2580.133333
+CALDAS             2432.657778
+ANTIOQUIA          2412.356203
+VALLE DEL CAUCA    2393.043194
+HUILA              2362.864407
+RISARALDA          2244.392045
+META               2227.552795
+CAQUETA            2200.000000
+SANTANDER          2174.259740
+MAGDALENA          2154.355263
+TOLIMA             2134.096386
+SUCRE              2087.077922
+CUNDINAMARCA       2073.772829
+CORDOBA            2070.172973
+CASANARE           2061.209677
+BOYACA             2055.352941
+CESAR              2048.613208
+BOGOTA D.C.        1980.824542
+ATLANTICO          1958.934077
+BOLIVAR            1950.318471
+Name: PRECIO_PROMEDIO_PUBLICADO, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="interpretacion-de-los-precios-promedio-por-departamento">
+<h1>Interpretación de los Precios Promedio por Departamento<a class="headerlink" href="#interpretacion-de-los-precios-promedio-por-departamento" title="Link to this heading">#</a></h1>
+<p>La tabla presenta los precios promedio publicados:</p>
+<section id="analisis-general">
+<h2>Análisis General<a class="headerlink" href="#analisis-general" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Rango de Precios</strong>: Los precios promedio varían desde aproximadamente 1,950 COP hasta 2,744 COP. Esto indica una variabilidad significativa en los precios entre los diferentes departamentos.</p></li>
+<li><p><strong>Departamentos con Precios Más Altos</strong>:</p>
+<ul class="simple">
+<li><p><strong>Cauca (2,744 COP)</strong>: Este departamento tiene el precio promedio más alto, lo que podría deberse a factores como una mayor demanda, costos de distribución más elevados o una oferta limitada.</p></li>
+<li><p><strong>Quindío (2,580 COP)</strong> y <strong>Caldas (2,433 COP)</strong>: Estos departamentos también presentan precios relativamente altos, lo que podría estar relacionado con características económicas o geográficas específicas.</p></li>
+</ul>
+</li>
+<li><p><strong>Departamentos con Precios Más Bajos</strong>:</p>
+<ul class="simple">
+<li><p><strong>Bolívar (1,950 COP)</strong> y <strong>Atlántico (1,959 COP)</strong>: Estos departamentos tienen los precios promedio más bajos, lo que podría indicar una mayor oferta, menores costos de distribución o una menor demanda.</p></li>
+<li><p><strong>Bogotá D.C. (1,981 COP)</strong>: A pesar de ser la capital, tiene uno de los precios más bajos, lo que podría deberse a una mayor competencia o una infraestructura más eficiente.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="precio-promedio-por-departamento">
+<h1>Precio Promedio por Departamento<a class="headerlink" href="#precio-promedio-por-departamento" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Gráfico de barras para precios por departamento</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">precio_por_departamento</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">precio_por_departamento</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;viridis&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Precio Promedio por Departamento&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Precio Promedio&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Departamento&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/a36cc860294106b4a8853341d5be859cff2226a8605e72b438a89af5f64e793c.png" src="_images/a36cc860294106b4a8853341d5be859cff2226a8605e72b438a89af5f64e793c.png" />
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="analisis-del-precio-promedio-por-departamento">
+<h1>Análisis del Precio Promedio por Departamento<a class="headerlink" href="#analisis-del-precio-promedio-por-departamento" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>Interpretación<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="departamentos-con-precios-mas-altos">
+<h3><strong>1. Departamentos con Precios Más Altos</strong><a class="headerlink" href="#departamentos-con-precios-mas-altos" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Cauca, Quindío y Caldas</strong> son los departamentos con el precio promedio más alto.</p></li>
+<li><p>También destacan <strong>Antioquia y Valle del Cauca</strong>, lo que sugiere que estas regiones tienen una mayor demanda o costos de producción elevados.</p></li>
+</ul>
+</section>
+<section id="departamentos-con-precios-intermedios">
+<h3><strong>2. Departamentos con Precios Intermedios</strong><a class="headerlink" href="#departamentos-con-precios-intermedios" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Huila, Risaralda, Meta y Caquetá tienen precios en un rango medio, lo que podría indicar mercados más estables o en crecimiento.</p></li>
+</ul>
+</section>
+<section id="departamentos-con-precios-mas-bajos">
+<h3><strong>3. Departamentos con Precios Más Bajos</strong><a class="headerlink" href="#departamentos-con-precios-mas-bajos" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Bolívar, Atlántico y Bogotá D.C.</strong> están en la parte inferior del ranking, lo que sugiere que los precios en estas zonas son relativamente más accesibles.</p></li>
+<li><p>Esto puede deberse a una mayor oferta, menores costos de producción o dinámicas del mercado local.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="top-10-municipios-con-precios-mas-altos">
+<h1>Top 10 Municipios con Precios Más Altos<a class="headerlink" href="#top-10-municipios-con-precios-mas-altos" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Análisis por municipio (top 10 municipios con precios más altos)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Top 10 municipios con precios más altos:&quot;</span><span class="p">)</span>
+<span class="n">top_municipios</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;MUNICIPIO_EDS&#39;</span><span class="p">)[</span><span class="s1">&#39;PRECIO_PROMEDIO_PUBLICADO&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">top_municipios</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Top 10 municipios con precios más altos:
+MUNICIPIO_EDS
+FLORIDA                   3315.000000
+SANTANDER DE QUILICHAO    3023.941176
+LA CEJA                   2813.117647
+RIOFRIO                   2750.500000
+PIEDECUESTA               2749.400000
+TULUA                     2691.273585
+ENVIGADO                  2685.000000
+AGUACHICA                 2619.000000
+ARMENIA                   2589.759398
+POPAYAN                   2585.366667
+Name: PRECIO_PROMEDIO_PUBLICADO, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Gráfico de barras para top 10 municipios</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">top_municipios</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">top_municipios</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;magma&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Top 10 Municipios con Precios Más Altos&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Precio Promedio&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Municipio&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/8b733429abdbf35c3e4d4e5b3f9000664106037929dc1994d9848cd63e36bb3c.png" src="_images/8b733429abdbf35c3e4d4e5b3f9000664106037929dc1994d9848cd63e36bb3c.png" />
+</div>
+</div>
+<section id="id3">
+<h2>Descripción de la Gráfica<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>Esta visualización muestra los <strong>10 municipios con los precios promedio más altos</strong>. Están ordenados de mayor a menor, siendo <strong>Florida</strong> el municipio con el precio más alto y <strong>Popayán</strong> el de menor precio dentro de este top.</p>
+</section>
+<section id="id4">
+<h2>Interpretación<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<section id="municipios-con-precios-mas-altos">
+<h3><strong>1. Municipios con Precios Más Altos</strong><a class="headerlink" href="#municipios-con-precios-mas-altos" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Florida y Santander de Quilichao</strong> lideran la lista con los precios más elevados.</p></li>
+<li><p>Esto podría deberse a una alta demanda, costos de producción elevados o características geográficas y económicas específicas de la región.</p></li>
+</ul>
+</section>
+<section id="municipios-con-precios-intermedios-en-el-ranking">
+<h3><strong>2. Municipios con Precios Intermedios en el Ranking</strong><a class="headerlink" href="#municipios-con-precios-intermedios-en-el-ranking" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>La Ceja, Riofrío y Piedecuesta</strong> presentan precios similares, lo que sugiere una tendencia estable en estas zonas.</p></li>
+</ul>
+</section>
+<section id="municipios-en-la-parte-baja-del-ranking">
+<h3><strong>3. Municipios en la Parte Baja del Ranking</strong><a class="headerlink" href="#municipios-en-la-parte-baja-del-ranking" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Envigado, Aguachica, Armenia y Popayán</strong> cierran la lista, aunque siguen estando entre los más caros del país.</p></li>
+<li><p>A pesar de estar en los últimos lugares de este top, sus precios siguen siendo relativamente altos en comparación con otros municipios.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="matriz-de-correlacion">
+<h1>Matriz de Correlación<a class="headerlink" href="#matriz-de-correlacion" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Correlación entre variables numéricas</span>
+
+
+<span class="c1"># Matriz de correlación</span>
+<span class="n">corr_matrix</span> <span class="o">=</span> <span class="n">df_numeric</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+
+<span class="c1"># Heatmap de correlación</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">corr_matrix</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;coolwarm&quot;</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Matriz de Correlación&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/158a9c9b749f8f63b351b506b961bc125fcdd4ae96059382dfb7f87852445568.png" src="_images/158a9c9b749f8f63b351b506b961bc125fcdd4ae96059382dfb7f87852445568.png" />
+</div>
+</div>
+<section id="interpretacion-de-las-correlaciones">
+<h2>Interpretación de las correlaciones<a class="headerlink" href="#interpretacion-de-las-correlaciones" title="Link to this heading">#</a></h2>
+<section id="relacion-entre-ano-y-precio-promedio-publicado-0-65">
+<h3>1️ <strong>Relación entre Año y Precio Promedio Publicado</strong> (<strong>0.65</strong>)<a class="headerlink" href="#relacion-entre-ano-y-precio-promedio-publicado-0-65" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Hay una correlación positiva moderada entre el <strong>año</strong> y el <strong>precio promedio publicado</strong>.</p></li>
+<li><p>Esto sugiere que los precios han <strong>aumentado con el tiempo</strong>, aunque no es una relación perfecta.</p></li>
+</ul>
+</section>
+<section id="relacion-entre-precio-promedio-y-latitud-longitud">
+<h3><strong>Relación entre Precio Promedio y Latitud/Longitud</strong><a class="headerlink" href="#relacion-entre-precio-promedio-y-latitud-longitud" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Latitud vs. Precio Promedio (-0.17)</strong> y <strong>Longitud vs. Precio Promedio (-0.29)</strong> muestran correlaciones negativas débiles.</p></li>
+<li><p>Esto indica que la <strong>ubicación geográfica tiene poca influencia directa</strong> sobre el precio promedio.</p></li>
+<li><p>Sin embargo, podría haber factores externos (como infraestructura o demanda) que expliquen mejor la variación de precios.</p></li>
+</ul>
+</section>
+<section id="relacion-entre-latitud-y-longitud-0-21">
+<h3><strong>Relación entre Latitud y Longitud (0.21)</strong><a class="headerlink" href="#relacion-entre-latitud-y-longitud-0-21" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>La latitud y longitud tienen una <strong>correlación positiva baja</strong>, lo que es esperable ya que ambas están relacionadas con la ubicación geográfica.</p></li>
+</ul>
+</section>
+</section>
+<section id="conclusion">
+<h2>Conclusión<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>El precio promedio ha tendido a subir con los años.</p></li>
+<li><p>La ubicación (latitud/longitud) no parece ser un factor determinante en los precios, al menos de forma directa.</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="georreferenciacion-del-precio-promedio-del-gas-natural-comprimido-vehicular-gncv-en-estaciones-de-servicio-de-colombia">
+<h1>Georreferenciación del Precio Promedio del Gas Natural Comprimido Vehicular (GNCV) en Estaciones de Servicio de Colombia<a class="headerlink" href="#georreferenciacion-del-precio-promedio-del-gas-natural-comprimido-vehicular-gncv-en-estaciones-de-servicio-de-colombia" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Cargar el shapefile de Colombia</span>
+<span class="n">shapefile_path</span> <span class="o">=</span><span class="s2">&quot;/Users/elianafuentes/Documents/DATAVIZMAPAS/COLOMBIA/COLOMBIA.shp&quot;</span>
+<span class="n">gdf_colombia</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">shapefile_path</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;latin1&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Crear la figura y los ejes</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+
+<span class="c1"># Graficar el mapa con colores por departamento</span>
+<span class="n">gdf_colombia</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&quot;DPTO_CNMBR&quot;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;tab20&quot;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Agregar título</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;División Departamental de Colombia&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+
+<span class="c1"># Ajustar la leyenda para que no cubra el mapa</span>
+<span class="n">leg</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_legend</span><span class="p">()</span>
+<span class="k">if</span> <span class="n">leg</span><span class="p">:</span>
+    <span class="n">leg</span><span class="o">.</span><span class="n">set_bbox_to_anchor</span><span class="p">((</span><span class="mf">1.2</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>  <span class="c1"># Mueve la leyenda fuera del mapa</span>
+    <span class="n">leg</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Departamentos&quot;</span><span class="p">)</span>  <span class="c1"># Agrega título a la leyenda</span>
+
+<span class="c1"># Quitar ejes</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_frame_on</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Mostrar el mapa</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/d061a1136de1c8f0314bd463312431963d166ef977820f0fec6b0bbdbc1a115c.png" src="_images/d061a1136de1c8f0314bd463312431963d166ef977820f0fec6b0bbdbc1a115c.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definir las columnas correctas según la información proporcionada</span>
+<span class="n">departamento_col</span> <span class="o">=</span> <span class="s1">&#39;DEPARTAMENTO_EDS&#39;</span>  <span class="c1"># Columna de departamento en el CSV</span>
+<span class="n">precio_col</span> <span class="o">=</span> <span class="s1">&#39;PRECIO_PROMEDIO_PUBLICADO&#39;</span>  <span class="c1"># Columna de precio en el CSV</span>
+<span class="n">fecha_col</span> <span class="o">=</span> <span class="s1">&#39;FECHA_PRECIO&#39;</span>  <span class="c1"># Columna de fecha en el CSV</span>
+<span class="n">departamento_geo_col</span> <span class="o">=</span> <span class="s1">&#39;DPTO_CNMBR&#39;</span>  <span class="c1"># Columna de departamento en el shapefile</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convertir la columna de fecha a formato datetime</span>
+<span class="n">df</span><span class="p">[</span><span class="n">fecha_col</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">fecha_col</span><span class="p">])</span>
+
+<span class="c1"># Asegurarse de que los nombres de departamentos coincidan entre ambos conjuntos de datos</span>
+<span class="c1"># Normalizar nombres (convertir a mayúsculas y eliminar acentos)</span>
+<span class="n">df</span><span class="p">[</span><span class="n">departamento_col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">departamento_col</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="s1">&#39;NFKD&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+<span class="n">gdf_colombia</span><span class="p">[</span><span class="n">departamento_geo_col</span><span class="p">]</span> <span class="o">=</span> <span class="n">gdf_colombia</span><span class="p">[</span><span class="n">departamento_geo_col</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="s1">&#39;NFKD&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+
+<span class="c1"># Obtener el último mes de datos disponibles</span>
+<span class="n">ultimo_mes</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">fecha_col</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">df_ultimo_mes</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">fecha_col</span><span class="p">]</span> <span class="o">==</span> <span class="n">ultimo_mes</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calcular el precio promedio por departamento para el último mes</span>
+<span class="n">precio_por_dpto</span> <span class="o">=</span> <span class="n">df_ultimo_mes</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">departamento_col</span><span class="p">)[</span><span class="n">precio_col</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="c1"># Unir los datos de precios con el shapefile</span>
+<span class="c1"># Primero, imprimir los valores únicos para verificar coincidencias</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Departamentos en datos GNCV:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">departamento_col</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Departamentos en shapefile:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">gdf_colombia</span><span class="p">[</span><span class="n">departamento_geo_col</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Departamentos en datos GNCV:
+[&#39;ANTIOQUIA&#39;, &#39;ATLANTICO&#39;, &#39;BOGOTA D.C.&#39;, &#39;BOLIVAR&#39;, &#39;BOYACA&#39;, &#39;CALDAS&#39;, &#39;CAQUETA&#39;, &#39;CASANARE&#39;, &#39;CAUCA&#39;, &#39;CESAR&#39;, &#39;CORDOBA&#39;, &#39;CUNDINAMARCA&#39;, &#39;HUILA&#39;, &#39;MAGDALENA&#39;, &#39;META&#39;, &#39;QUINDIO&#39;, &#39;RISARALDA&#39;, &#39;SANTANDER&#39;, &#39;SUCRE&#39;, &#39;TOLIMA&#39;, &#39;VALLE DEL CAUCA&#39;]
+
+Departamentos en shapefile:
+[&#39;AMAZONAS&#39;, &#39;ANTIOQUIA&#39;, &#39;ARAUCA&#39;, &#39;ARCHIPIELAGO DE SAN ANDRES&#39;, &#39;ATLANTICO&#39;, &#39;BOGOTA D.C.&#39;, &#39;BOLIVAR&#39;, &#39;BOYACA&#39;, &#39;CALDAS&#39;, &#39;CAQUETA&#39;, &#39;CASANARE&#39;, &#39;CAUCA&#39;, &#39;CESAR&#39;, &#39;CHOCO&#39;, &#39;CORDOBA&#39;, &#39;CUNDINAMARCA&#39;, &#39;GUAINIA&#39;, &#39;GUAVIARE&#39;, &#39;HUILA&#39;, &#39;LA GUAJIRA&#39;, &#39;MAGDALENA&#39;, &#39;META&#39;, &#39;NARI?O&#39;, &#39;NORTE DE SANTANDER&#39;, &#39;PUTUMAYO&#39;, &#39;QUINDIO&#39;, &#39;RISARALDA&#39;, &#39;SANTANDER&#39;, &#39;SUCRE&#39;, &#39;TOLIMA&#39;, &#39;VALLE DEL CAUCA&#39;, &#39;VAUPES&#39;, &#39;VICHADA&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Unir los datos de precios con el shapefile</span>
+<span class="n">gdf_merged</span> <span class="o">=</span> <span class="n">gdf_colombia</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">precio_por_dpto</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="n">departamento_geo_col</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="n">departamento_col</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Función para crear el mapa de precios</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">crear_mapa_precios</span><span class="p">(</span><span class="n">gdf</span><span class="p">,</span> <span class="n">precio_columna</span><span class="p">,</span> <span class="n">titulo</span><span class="p">,</span> <span class="n">fecha</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+    
+    <span class="c1"># Definir una paleta de colores personalizada (del más barato al más caro)</span>
+    <span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">YlOrRd</span>
+    
+    <span class="c1"># Crear mapa con colores basados en el precio</span>
+    <span class="n">gdf</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="n">precio_columna</span><span class="p">,</span> 
+             <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> 
+             <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+             <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">,</span>
+             <span class="n">missing_kwds</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;lightgrey&#39;</span><span class="p">},</span>
+             <span class="n">legend_kwds</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;Precio promedio (COP)&quot;</span><span class="p">,</span>
+                          <span class="s1">&#39;orientation&#39;</span><span class="p">:</span> <span class="s2">&quot;horizontal&quot;</span><span class="p">})</span>
+    
+    <span class="c1"># Añadir título con fecha si está disponible</span>
+    <span class="k">if</span> <span class="n">fecha</span><span class="p">:</span>
+        <span class="n">titulo_completo</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">titulo</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">fecha</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%B %Y&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">titulo_completo</span> <span class="o">=</span> <span class="n">titulo</span>
+    
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">titulo_completo</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+    
+    <span class="c1"># Añadir nombres de departamentos</span>
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">gdf</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">notna</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="n">precio_columna</span><span class="p">]):</span>
+            <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">centroid</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">row</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">centroid</span><span class="o">.</span><span class="n">y</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="n">departamento_geo_col</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">$</span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="n">precio_columna</span><span class="p">]</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> 
+                    <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+    
+    <span class="c1"># Quitar ejes</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+    
+    <span class="k">return</span> <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="distribucion-de-precios-de-gas-natural-comprimido-vehicular-en-colombia-marzo-2025">
+<h1>Distribución de Precios de Gas Natural Comprimido Vehicular en Colombia – Marzo 2025<a class="headerlink" href="#distribucion-de-precios-de-gas-natural-comprimido-vehicular-en-colombia-marzo-2025" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Crear el mapa de precios actuales</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">crear_mapa_precios</span><span class="p">(</span><span class="n">gdf_merged</span><span class="p">,</span> 
+                            <span class="n">precio_col</span><span class="p">,</span> 
+                            <span class="s2">&quot;Distribución de Precios de Gas Natural Comprimido Vehicular en Colombia&quot;</span><span class="p">,</span>
+                            <span class="n">ultimo_mes</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;mapa_precios_gncv_colombia.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/a1323e07e659b60848b2d7d760685168f53baf1deef56d36bed07d230ad19dec.png" src="_images/a1323e07e659b60848b2d7d760685168f53baf1deef56d36bed07d230ad19dec.png" />
+</div>
+</div>
+<section id="interpretacion-de-los-colores">
+<h2>Interpretación de los colores<a class="headerlink" href="#interpretacion-de-los-colores" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Colores claros (amarillo)</strong>: Indican precios más bajos.</p></li>
+<li><p><strong>Colores oscuros (rojo/burdeos)</strong>: Representan precios más altos.</p></li>
+</ul>
+</section>
+<section id="hallazgos-clave">
+<h2>Hallazgos clave<a class="headerlink" href="#hallazgos-clave" title="Link to this heading">#</a></h2>
+<p><strong>Departamentos con precios más altos</strong></p>
+<ul class="simple">
+<li><p>Destacan zonas como <strong>Antioquia, Valle del Cauca y algunos sectores del Caribe</strong> con los precios más elevados (por encima de <strong>$3,400 COP</strong>).</p></li>
+<li><p>Esto podría deberse a factores como <strong>costos de distribución, impuestos locales o demanda del GNC</strong>.</p></li>
+</ul>
+<p><strong>Departamentos con precios más bajos</strong></p>
+<ul class="simple">
+<li><p>En <strong>Boyacá, Santander y partes de la región Andina</strong>, se observan precios más bajos (cerca de <strong><span class="math notranslate nohighlight">\(2,400 - \)</span>2,600 COP</strong>).</p></li>
+<li><p>Es posible que estas zonas tengan <strong>mejor infraestructura de distribución de gas natural o incentivos para su uso</strong>.</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="precios-de-gncv-por-municipio-marzo-2025">
+<h1>Precios de GNCV por Municipio – Marzo 2025<a class="headerlink" href="#precios-de-gncv-por-municipio-marzo-2025" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Crear un segundo mapa que use las coordenadas exactas de los municipios</span>
+<span class="c1"># Crear un GeoDataFrame a partir de las coordenadas de municipios en los datos</span>
+<span class="n">gdf_puntos</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span>
+    <span class="n">df_ultimo_mes</span><span class="p">,</span>
+    <span class="n">geometry</span><span class="o">=</span><span class="n">gpd</span><span class="o">.</span><span class="n">points_from_xy</span><span class="p">(</span><span class="n">df_ultimo_mes</span><span class="p">[</span><span class="s1">&#39;LONGITUD_MUNICIPIO&#39;</span><span class="p">],</span> <span class="n">df_ultimo_mes</span><span class="p">[</span><span class="s1">&#39;LATITUD_MUNICIPIO&#39;</span><span class="p">]),</span>
+    <span class="n">crs</span><span class="o">=</span><span class="s2">&quot;EPSG:4326&quot;</span>  <span class="c1"># Definir sistema de coordenadas WGS84</span>
+<span class="p">)</span>
+
+<span class="c1"># Crear mapa con puntos de precios</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+
+<span class="c1"># Dibujar el mapa base de Colombia</span>
+<span class="n">gdf_colombia</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;lightgrey&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+
+<span class="c1"># Crear una paleta de colores para los puntos</span>
+<span class="n">vmin</span> <span class="o">=</span> <span class="n">df_ultimo_mes</span><span class="p">[</span><span class="n">precio_col</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">vmax</span> <span class="o">=</span> <span class="n">df_ultimo_mes</span><span class="p">[</span><span class="n">precio_col</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">norm</span> <span class="o">=</span> <span class="n">Normalize</span><span class="p">(</span><span class="n">vmin</span><span class="o">=</span><span class="n">vmin</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">vmax</span><span class="p">)</span>
+<span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">YlOrRd</span>
+
+<span class="c1"># Dibujar los puntos con colores según precio</span>
+<span class="n">scatter</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">gdf_puntos</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> 
+    <span class="n">gdf_puntos</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> 
+    <span class="n">c</span><span class="o">=</span><span class="n">gdf_puntos</span><span class="p">[</span><span class="n">precio_col</span><span class="p">],</span>
+    <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">,</span>
+    <span class="n">norm</span><span class="o">=</span><span class="n">norm</span><span class="p">,</span>
+    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+    <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+    <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.5</span>
+<span class="p">)</span>
+<span class="c1"># Añadir barra de colores</span>
+<span class="n">cbar</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">scatter</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="n">cbar</span><span class="o">.</span><span class="n">set_label</span><span class="p">(</span><span class="s1">&#39;Precio Promedio GNCV (COP)&#39;</span><span class="p">)</span>
+
+<span class="c1"># Añadir título</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Precios de GNCV por Municipio - </span><span class="si">{</span><span class="n">ultimo_mes</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%B %Y&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+
+<span class="c1"># Añadir leyenda con los 5 municipios con precios más altos y más bajos</span>
+<span class="n">top_5_altos</span> <span class="o">=</span> <span class="n">df_ultimo_mes</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">precio_col</span><span class="p">)</span>
+<span class="n">top_5_bajos</span> <span class="o">=</span> <span class="n">df_ultimo_mes</span><span class="o">.</span><span class="n">nsmallest</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">precio_col</span><span class="p">)</span>
+
+<span class="c1"># Crear textos para la leyenda</span>
+<span class="n">text_altos</span> <span class="o">=</span> <span class="s2">&quot;Municipios con precios más altos:</span><span class="se">\n</span><span class="s2">&quot;</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">row</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">top_5_altos</span><span class="o">.</span><span class="n">iterrows</span><span class="p">(),</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">text_altos</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;MUNICIPIO_EDS&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;DEPARTAMENTO_EDS&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">): $</span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="n">precio_col</span><span class="p">]</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+
+<span class="n">text_bajos</span> <span class="o">=</span> <span class="s2">&quot;Municipios con precios más bajos:</span><span class="se">\n</span><span class="s2">&quot;</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">row</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">top_5_bajos</span><span class="o">.</span><span class="n">iterrows</span><span class="p">(),</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">text_bajos</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;MUNICIPIO_EDS&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;DEPARTAMENTO_EDS&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">): $</span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="n">precio_col</span><span class="p">]</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+
+<span class="c1"># Añadir textos al mapa</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figtext</span><span class="p">(</span><span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">,</span> <span class="n">text_altos</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figtext</span><span class="p">(</span><span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="n">text_bajos</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">))</span>
+
+<span class="c1"># Quitar ejes</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;mapa_precios_gncv_municipios.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/a40cd1cf653e5ea3eb9188108e93a640e3f368b74a2525519012c1d60cbaca1e.png" src="_images/a40cd1cf653e5ea3eb9188108e93a640e3f368b74a2525519012c1d60cbaca1e.png" />
+</div>
+</div>
+<section id="id5">
+<h2>Interpretación de los colores<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Tonos amarillos</strong>  → Municipios con precios más bajos.</p></li>
+<li><p><strong>Tonos rojizos</strong>  → Municipios con precios más altos.</p></li>
+</ul>
+</section>
+<section id="id6">
+<h2>Hallazgos clave<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<section id="id7">
+<h3>Municipios con precios más altos<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>Los municipios con los costos más elevados de GNCV son:</p>
+<ol class="arabic simple">
+<li><p><strong>Medellín (Antioquia)</strong> – $3,700 COP</p></li>
+<li><p><strong>Armenia (Quindío)</strong> – $3,699 COP</p></li>
+<li><p><strong>Armenia (Quindío)</strong> – $3,689 COP</p></li>
+<li><p><strong>Calarcá (Quindío)</strong> – $3,599 COP</p></li>
+<li><p><strong>Bello (Antioquia)</strong> – $3,599 COP</p></li>
+</ol>
+<p>Se observa que <strong>el Quindío y Antioquia tienen los precios más altos</strong>, lo que podría estar influenciado por factores como <strong>costos de transporte, baja competencia o demanda alta en estas zonas</strong>.</p>
+</section>
+<section id="municipios-con-precios-mas-bajos">
+<h3>Municipios con precios más bajos<a class="headerlink" href="#municipios-con-precios-mas-bajos" title="Link to this heading">#</a></h3>
+<p>Todos los valores mínimos corresponden a <strong>Bogotá D.C.</strong>, con un precio estable de <strong>$1,899 COP</strong>.</p>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="variacion-de-precios-del-gncv-en-colombia-enero-2021-marzo-2025">
+<h1>Variación de Precios del GNCV en Colombia (Enero 2021 - Marzo 2025)<a class="headerlink" href="#variacion-de-precios-del-gncv-en-colombia-enero-2021-marzo-2025" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Crear mapa de variación de precios entre el primer y último mes</span>
+<span class="n">primer_mes</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">fecha_col</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">df_primer_mes</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">fecha_col</span><span class="p">]</span> <span class="o">==</span> <span class="n">primer_mes</span><span class="p">]</span>
+
+<span class="c1"># Calcular precios promedios para el primer mes</span>
+<span class="n">precio_primer_mes</span> <span class="o">=</span> <span class="n">df_primer_mes</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">departamento_col</span><span class="p">)[</span><span class="n">precio_col</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">precio_primer_mes</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="n">precio_col</span><span class="p">:</span> <span class="s1">&#39;precio_inicial&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Calcular precios promedios para el último mes</span>
+<span class="n">precio_ultimo_mes</span> <span class="o">=</span> <span class="n">df_ultimo_mes</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">departamento_col</span><span class="p">)[</span><span class="n">precio_col</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">precio_ultimo_mes</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="n">precio_col</span><span class="p">:</span> <span class="s1">&#39;precio_final&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Unir ambos conjuntos de precios</span>
+<span class="n">precio_comparacion</span> <span class="o">=</span> <span class="n">precio_primer_mes</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">precio_ultimo_mes</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="n">departamento_col</span><span class="p">)</span>
+
+<span class="c1"># Calcular variación porcentual</span>
+<span class="n">precio_comparacion</span><span class="p">[</span><span class="s1">&#39;variacion_porcentual&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">((</span><span class="n">precio_comparacion</span><span class="p">[</span><span class="s1">&#39;precio_final&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">precio_comparacion</span><span class="p">[</span><span class="s1">&#39;precio_inicial&#39;</span><span class="p">])</span> <span class="o">/</span> 
+                                           <span class="n">precio_comparacion</span><span class="p">[</span><span class="s1">&#39;precio_inicial&#39;</span><span class="p">])</span> <span class="o">*</span> <span class="mi">100</span>
+
+<span class="c1"># Unir con el shapefile</span>
+<span class="n">gdf_variacion</span> <span class="o">=</span> <span class="n">gdf_colombia</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">precio_comparacion</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="n">departamento_geo_col</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="n">departamento_col</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
+
+<span class="c1"># Crear mapa de variación de precios</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+
+<span class="c1"># Usar una paleta divergente para mostrar aumentos y disminuciones</span>
+<span class="n">cmap_div</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">RdBu_r</span>
+
+<span class="c1"># Encontrar el valor absoluto máximo para crear una escala simétrica</span>
+<span class="n">vmax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">gdf_variacion</span><span class="p">[</span><span class="s1">&#39;variacion_porcentual&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()),</span> 
+           <span class="nb">abs</span><span class="p">(</span><span class="n">gdf_variacion</span><span class="p">[</span><span class="s1">&#39;variacion_porcentual&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()))</span>
+
+<span class="c1"># Crear mapa con colores basados en la variación</span>
+<span class="n">gdf_variacion</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;variacion_porcentual&#39;</span><span class="p">,</span> 
+                 <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> 
+                 <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                 <span class="n">cmap</span><span class="o">=</span><span class="n">cmap_div</span><span class="p">,</span>
+                 <span class="n">vmin</span><span class="o">=-</span><span class="n">vmax</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">vmax</span><span class="p">,</span>
+                 <span class="n">missing_kwds</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;lightgrey&#39;</span><span class="p">},</span>
+                 <span class="n">legend_kwds</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;Variación de precio (%)&quot;</span><span class="p">,</span>
+                              <span class="s1">&#39;orientation&#39;</span><span class="p">:</span> <span class="s2">&quot;horizontal&quot;</span><span class="p">})</span>
+
+<span class="n">periodo</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">primer_mes</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%B %Y&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">ultimo_mes</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%B %Y&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Variación de Precios de GNCV en Colombia</span><span class="se">\n</span><span class="si">{</span><span class="n">periodo</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+
+<span class="c1"># Añadir nombres de departamentos y variación porcentual</span>
+<span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">gdf_variacion</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">notna</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;variacion_porcentual&#39;</span><span class="p">]):</span>
+        <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">centroid</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">row</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">centroid</span><span class="o">.</span><span class="n">y</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="n">departamento_geo_col</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;variacion_porcentual&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">,</span> 
+                <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+
+<span class="c1"># Quitar ejes</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;variacion_precios_gncv_colombia.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/292beab7feb25a257b157ea68897eb7b19f42637f61d72d7ea9519ae36e6843b.png" src="_images/292beab7feb25a257b157ea68897eb7b19f42637f61d72d7ea9519ae36e6843b.png" />
+</div>
+</div>
+<section id="id8">
+<h2>Tendencia general<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Aumento generalizado</strong>: Todos los departamentos analizados muestran variaciones positivas (tonos rojos), indicando un incremento significativo en los precios del Gas Natural Comprimido Vehicular durante este período de cuatro años.</p></li>
+</ul>
+</section>
+<section id="analisis-por-regiones">
+<h2>Análisis por regiones<a class="headerlink" href="#analisis-por-regiones" title="Link to this heading">#</a></h2>
+<section id="region-caribe-norte">
+<h3>Región Caribe (Norte)<a class="headerlink" href="#region-caribe-norte" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Incrementos más altos</strong>:</p>
+<ul>
+<li><p><strong>Cesar y Magdalena</strong>: &gt;75% (máximos incrementos)</p></li>
+<li><p><strong>Bolívar</strong>: Aproximadamente 75%</p></li>
+<li><p><strong>Atlántico</strong>: Alrededor del 73%</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="region-andina-centro">
+<h3>Región Andina (Centro)<a class="headerlink" href="#region-andina-centro" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Incrementos moderados</strong>:</p>
+<ul>
+<li><p><strong>Santander</strong>: 45.7%</p></li>
+<li><p><strong>Cundinamarca</strong>: ~42.8%</p></li>
+<li><p><strong>Bogotá D.C.</strong>: ~43%</p></li>
+<li><p><strong>Risaralda</strong>: Entre 40-45%</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="region-occidental">
+<h3>Región Occidental<a class="headerlink" href="#region-occidental" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Valle del Cauca</strong>: Presenta uno de los aumentos más bajos entre los departamentos visualizados (~35%)</p></li>
+</ul>
+</section>
+</section>
+<section id="distribucion-espacial">
+<h2>Distribución espacial<a class="headerlink" href="#distribucion-espacial" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Los mayores incrementos se concentran en la región norte (costa Caribe)</p></li>
+<li><p>La región central muestra incrementos moderados</p></li>
+<li><p>Extensas áreas del país aparecen en gris, indicando ausencia de datos de estaciones GNCV</p></li>
+</ul>
+</section>
+<section id="implicaciones-economicas">
+<h2>Implicaciones económicas<a class="headerlink" href="#implicaciones-economicas" title="Link to this heading">#</a></h2>
+<p>Este incremento generalizado probablemente refleja:</p>
+<ol class="arabic simple">
+<li><p>Efectos inflacionarios durante el período 2021-2025</p></li>
+<li><p>Modificaciones en políticas de fijación de precios de combustibles</p></li>
+<li><p>Fluctuaciones en el mercado internacional del gas natural</p></li>
+<li><p>Posibles cambios en la estructura impositiva aplicada a combustibles alternativos</p></li>
+</ol>
+</section>
+<section id="id9">
+<h2>Conclusión<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<p>El mercado del GNCV en Colombia ha experimentado un encarecimiento sustancial en el período analizado, con variaciones que oscilan entre 35% y más del 75%, presentando una clara diferenciación regional donde la costa norte ha sufrido los incrementos más pronunciados.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Bienvenidos a mi Jupyter Book</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Precios Promedio de Gas Natural Comprimido Vehicular (GNCV) en diferentes estaciones de servicio de Colombia</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contextualizacion-de-la-base-de-datos">Contextualización de la Base de Datos</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descripcion-general">Descripción General</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo-de-la-base-de-datos">Objetivo de la Base de Datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descripcion-de-las-variables">Descripción de las Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-temporales">Variables Temporales:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-geograficas">Variables Geográficas:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-de-la-estacion-de-servicio">Variables de la Estación de Servicio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-de-precio">Variable de Precio:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-variables">Tipos de Variables</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cuantitativas"><strong>Variables Cuantitativas</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cualitativas"><strong>Variables Cualitativas</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#valores-faltantes">Valores Faltantes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis">Análisis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-los-datos">Interpretación de los Datos</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-precios-promedio-de-gncv">Distribución de precios promedio de GNCV</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-la-distribucion-de-precios-promedio-de-gncv">Interpretación de la Distribución de precios promedio de GNCV</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-precios-por-departamento">Distribución de Precios por Departamento</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-la-distribucion-de-precios-por-departamento">Análisis de la Distribución de Precios por Departamento</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-la-grafica">Interpretación de la Gráfica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Análisis</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evolucion-del-precio-por-departamento">Evolucion del Precio por Departamento</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-la-grafica-evolucion-del-precio-por-departamento">Análisis de la grafica Evolucion del Precio por Departamento</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tendencia-temporal-de-precios-promedio">Tendencia Temporal de Precios Promedio</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-grafica-tendencia-temporal-de-precios-promedio">Analisis grafica Tendencia Temporal de Precios Promedio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tendencia-general"><strong>1. Tendencia General</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etapas-clave"><strong>2. Etapas Clave</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tendencia-temporal-de-precios-promedio-por-ano-y-mes">Tendencia Temporal de Precios Promedio por Año y Mes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-la-tendencia-temporal-de-precios-promedio-por-ano-y-mes">Análisis de la Tendencia Temporal de Precios Promedio por Año y Mes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#descripcion-de-la-grafica">Descripción de la Gráfica</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion">Interpretación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tendencia-general-a-lo-largo-de-los-anos"><strong>1. Tendencia General a lo Largo de los Años</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comportamiento-mensual"><strong>2. Comportamiento Mensual</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#precios-promedio-por-departamento">Precios Promedio por Departamento</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-los-precios-promedio-por-departamento">Interpretación de los Precios Promedio por Departamento</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-general">Análisis General</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#precio-promedio-por-departamento">Precio Promedio por Departamento</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-del-precio-promedio-por-departamento">Análisis del Precio Promedio por Departamento</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Interpretación</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#departamentos-con-precios-mas-altos"><strong>1. Departamentos con Precios Más Altos</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#departamentos-con-precios-intermedios"><strong>2. Departamentos con Precios Intermedios</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#departamentos-con-precios-mas-bajos"><strong>3. Departamentos con Precios Más Bajos</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#top-10-municipios-con-precios-mas-altos">Top 10 Municipios con Precios Más Altos</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Descripción de la Gráfica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Interpretación</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#municipios-con-precios-mas-altos"><strong>1. Municipios con Precios Más Altos</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#municipios-con-precios-intermedios-en-el-ranking"><strong>2. Municipios con Precios Intermedios en el Ranking</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#municipios-en-la-parte-baja-del-ranking"><strong>3. Municipios en la Parte Baja del Ranking</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriz-de-correlacion">Matriz de Correlación</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-las-correlaciones">Interpretación de las correlaciones</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relacion-entre-ano-y-precio-promedio-publicado-0-65">1️ <strong>Relación entre Año y Precio Promedio Publicado</strong> (<strong>0.65</strong>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relacion-entre-precio-promedio-y-latitud-longitud"><strong>Relación entre Precio Promedio y Latitud/Longitud</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relacion-entre-latitud-y-longitud-0-21"><strong>Relación entre Latitud y Longitud (0.21)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusión</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#georreferenciacion-del-precio-promedio-del-gas-natural-comprimido-vehicular-gncv-en-estaciones-de-servicio-de-colombia">Georreferenciación del Precio Promedio del Gas Natural Comprimido Vehicular (GNCV) en Estaciones de Servicio de Colombia</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-precios-de-gas-natural-comprimido-vehicular-en-colombia-marzo-2025">Distribución de Precios de Gas Natural Comprimido Vehicular en Colombia – Marzo 2025</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-los-colores">Interpretación de los colores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hallazgos-clave">Hallazgos clave</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#precios-de-gncv-por-municipio-marzo-2025">Precios de GNCV por Municipio – Marzo 2025</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Interpretación de los colores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Hallazgos clave</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Municipios con precios más altos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#municipios-con-precios-mas-bajos">Municipios con precios más bajos</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#variacion-de-precios-del-gncv-en-colombia-enero-2021-marzo-2025">Variación de Precios del GNCV en Colombia (Enero 2021 - Marzo 2025)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Tendencia general</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-por-regiones">Análisis por regiones</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#region-caribe-norte">Región Caribe (Norte)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#region-andina-centro">Región Andina (Centro)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#region-occidental">Región Occidental</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-espacial">Distribución espacial</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implicaciones-economicas">Implicaciones económicas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Conclusión</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
